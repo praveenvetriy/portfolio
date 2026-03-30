@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praveen V | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #0f172a; color: #e2e8f0; }
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(135deg, #1e293b, #020617);
+    }
+    header h1 { font-size: 3rem; }
+    header p { margin: 10px 0; color: #94a3b8; }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #38bdf8;
+      color: #020617;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #0ea5e9; }
+
+    section { padding: 60px 10%; }
+    h2 { text-align: center; margin-bottom: 40px; }
+
+    .about, .skills, .projects, .contact {
+      background: #1e293b;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      list-style: none;
+    }
+
+    .skills li {
+      background: #020617;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .projects .card {
+      background: #020617;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Praveen V</h1>
+  <p>IT Technical Support Engineer</p>
+  <button class="btn">Download Resume</button>
+</header>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>I am an experienced IT Technical Support Engineer with strong troubleshooting and system administration skills. Passionate about solving technical issues and improving system performance.</p>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Linux Administration</li>
+    <li>AWS (S3, EC2)</li>
+    <li>Networking</li>
+    <li>Shell Scripting</li>
+    <li>Server Monitoring</li>
+  </ul>
+</section>
+
+<section class="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Server Monitoring Setup</h3>
+    <p>Implemented monitoring solutions for Linux servers to track uptime and performance.</p>
+  </div>
+  <div class="card">
+    <h3>AWS S3 Troubleshooting</h3>
+    <p>Resolved access and upload issues for cloud storage systems.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Email: praveenvetri263@gmail.com</p>
+  <p>Phone: +91 9894970527</p>
+</section>
+
+<footer>
+  <p>© 2026 Praveen V. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
