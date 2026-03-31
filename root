@@ -1,119 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Praveen V | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background: #0f172a; color: #e2e8f0; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praveen | Site Reliability Engineer</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+    }
+
     header {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      background: linear-gradient(135deg, #1e293b, #020617);
-    }
-    header h1 { font-size: 3rem; }
-    header p { margin: 10px 0; color: #94a3b8; }
-    .btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      border: none;
-      background: #38bdf8;
-      color: #020617;
-      cursor: pointer;
-      border-radius: 25px;
-      transition: 0.3s;
-    }
-    .btn:hover { background: #0ea5e9; }
-
-    section { padding: 60px 10%; }
-    h2 { text-align: center; margin-bottom: 40px; }
-
-    .about, .skills, .projects, .contact {
-      background: #1e293b;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      padding: 30px;
+        text-align: center;
+        padding: 50px 20px;
+        background: linear-gradient(135deg, #1e293b, #0f172a);
     }
 
-    .skills ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
-      list-style: none;
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
     }
 
-    .skills li {
-      background: #020617;
-      padding: 10px;
-      border-radius: 10px;
-      text-align: center;
+    header p {
+        color: #94a3b8;
     }
 
-    .projects .card {
-      background: #020617;
-      padding: 20px;
-      margin: 10px 0;
-      border-radius: 10px;
+    section {
+        padding: 40px 10%;
+    }
+
+    h2 {
+        border-left: 4px solid #38bdf8;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Animated Skill Buttons */
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .skill-btn {
+        padding: 10px 20px;
+        border-radius: 25px;
+        border: 2px solid #38bdf8;
+        background: transparent;
+        color: #38bdf8;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .skill-btn::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #38bdf8;
+        top: 0;
+        left: -100%;
+        transition: 0.4s;
+        z-index: -1;
+    }
+
+    .skill-btn:hover::before {
+        left: 0;
+    }
+
+    .skill-btn:hover {
+        color: #0f172a;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px #38bdf8;
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      color: #94a3b8;
+        text-align: center;
+        padding: 20px;
+        background: #020617;
+        color: #64748b;
     }
-  </style>
+
+    a {
+        color: #38bdf8;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Praveen V</h1>
-  <p>IT Technical Support Engineer</p>
-  <button class="btn">Download Resume</button>
+    <h1>Praveen Vetriyazhagan</h1>
+    <p>Site Reliability Engineer | Cybersecurity Enthusiast</p>
+    <p>📍 Vedaranyam | 📧 praveenvetri263@gmail.com</p>
 </header>
 
-<section class="about">
-  <h2>About Me</h2>
-  <p>I am an experienced IT Technical Support Engineer with strong troubleshooting and system administration skills. Passionate about solving technical issues and improving system performance.</p>
+<section>
+    <h2>Profile</h2>
+    <div class="card">
+        <p>
+            Experienced Technical Support Engineer with 4+ years of expertise in Microsoft 365,
+            Network Security, Virtualization, and Cloud Infrastructure. Passionate about building
+            secure systems and minimizing risks.
+        </p>
+    </div>
 </section>
 
-<section class="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Linux Administration</li>
-    <li>AWS (S3, EC2)</li>
-    <li>Networking</li>
-    <li>Shell Scripting</li>
-    <li>Server Monitoring</li>
-  </ul>
+<section>
+    <h2>Core Skills</h2>
+    <div class="skills">
+        <button class="skill-btn">Microsoft 365</button>
+        <button class="skill-btn">Azure / AWS</button>
+        <button class="skill-btn">Linux</button>
+        <button class="skill-btn">VMware / Proxmox</button>
+        <button class="skill-btn">Firewall (Fortinet, Sophos)</button>
+        <button class="skill-btn">Networking (DNS, DHCP)</button>
+        <button class="skill-btn">VPN</button>
+        <button class="skill-btn">Endpoint Security</button>
+        <button class="skill-btn">DLP</button>
+        <button class="skill-btn">SIEM (Wazuh)</button>
+    </div>
 </section>
 
-<section class="projects">
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>Server Monitoring Setup</h3>
-    <p>Implemented monitoring solutions for Linux servers to track uptime and performance.</p>
-  </div>
-  <div class="card">
-    <h3>AWS S3 Troubleshooting</h3>
-    <p>Resolved access and upload issues for cloud storage systems.</p>
-  </div>
+<section>
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>IT Technical Support Engineer</h3>
+        <p>Virtual Tech Gurus | 2023 - Present</p>
+        <ul>
+            <li>Providing L2 support for Microsoft 365 & Linux systems</li>
+            <li>Managing AWS infrastructure and virtualization</li>
+            <li>Configuring firewall policies and endpoint security</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>System Engineer</h3>
+        <p>Ram Infotech | 2021 - 2023</p>
+        <ul>
+            <li>Handled desktop support and system deployments</li>
+            <li>Provided L1 troubleshooting for hardware/software</li>
+        </ul>
+    </div>
 </section>
 
-<section class="contact">
-  <h2>Contact</h2>
-  <p>Email: praveenvetri263@gmail.com</p>
-  <p>Phone: +91 9894970527</p>
+<section>
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>Automated Web Security Monitoring</h3>
+        <p>
+            Built a Kubernetes-based monitoring system using Wazuh for real-time
+            vulnerability scanning and threat detection.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Certifications</h2>
+    <div class="card">
+        <ul>
+            <li>CompTIA Security+ (In Progress)</li>
+            <li>Cisco Cybersecurity</li>
+            <li>Splunk Fundamentals</li>
+            <li>AWS Solution Architect</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <div class="card">
+        <p>M.Sc Computer Science - Alagappa University</p>
+        <p>B.Sc Computer Science - AVVM College</p>
+    </div>
 </section>
 
 <footer>
-  <p>© 2026 Praveen V. All Rights Reserved.</p>
+    <p>© 2026 Praveen | Built with 💻</p>
 </footer>
 
 </body>
